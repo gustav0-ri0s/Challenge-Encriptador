@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador & Desencriptador ONE</title>
+</head>
+<body>
+    <main>
+        <section class="input">
+            <form action="">
+                <textarea name="" id="ingreso" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+            </form>
+            <p>¡Sólo letras minúsculas y sin acentos!</p>
+            <button id="encriptador">Encriptar</button>
+            <button id="desencriptador">Desencriptar</button>
+        </section>
+        <section class="output">
+            <p>Ningún mensaje fue encontrado</p>
+            <p>Ingrese el texto que desee encriptar o desencriptar.</p>
+            <textarea id="salida" cols="30" rows="10"></textarea> 
+            <button id="copiar">Copiar</button> 
+        </section>
+    </main>
+    <footer>
+        <p>Desarrollado por Gustavo Rios.</p>
+    </footer>
+    <script>
+        
+        function encriptador(){
+            let ingreso;
+            let salida;
+            ingreso = document.getElementById("ingreso").value;
+            var mapObj = {
+            a:"ai",
+            e:"enter",
+            i:"imes",
+            o:"ober",
+            u:"ufat"
+            };
+        
+            salida = ingreso.replace(/a|e|i|o|u/g, function(matched){
+            return mapObj[matched];
+            });
+            document.getElementById("salida").value = salida;
+        }
+
+        function desencriptador(){
+            let ingreso;
+            let salida;
+            ingreso = document.getElementById("ingreso").value;
+            var mapObj = {
+            ai:"a",
+            enter:"e",
+            imes:"i",
+            ober:"o",
+            ufat:"u"
+            };
+        
+            salida = ingreso.replace(/ai|enter|imes|ober|ufat/g, function(matched){
+            return mapObj[matched];
+            });
+            document.getElementById("salida").value = salida;
+        }
+        
+        let botonEncriptador = document.getElementById("encriptador");
+        botonEncriptador.onclick = encriptador;
+
+        let botonDesencriptador = document.getElementById("desencriptador");
+        botonDesencriptador.onclick = desencriptador;
+
+   
+
+        
+        
+    </script>    
+</body>
+</html>
