@@ -15,7 +15,7 @@ Por otro lado, existe un botón "Copiar" (que equivale a presionar Ctrl+V) que p
 
 ## :computer: Tecnologías utilizadas
 - HTML5
-- CSS
+- CSS3
 - JavaScript
 
 ## :sparkles: Acceso
