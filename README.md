@@ -21,8 +21,8 @@ Por otro lado, existe un botón "Copiar" (que equivale a presionar Ctrl+V) que p
 ## :sparkles: Acceso
 Puedes acceder a la Deploy de este proyecto <a href="https://gustav0-ri0s.github.io/Challenge-Encriptador/">aquí</a>
 
-## :raising_hand: Autor
-Desarrollado por Isabel Gomez Luque
+## :man_student: Autor
+Desarrollado por Gustavo Rios Quevedo
 
 ## :pushpin: Contacto
 - Email: <a href="mailto: tavitoo03@gmail.com" target="_blank">tavitoo03@gmail.com</a>
