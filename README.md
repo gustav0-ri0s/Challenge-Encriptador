@@ -19,7 +19,7 @@ Por otro lado, existe un botón "Copiar" (que equivale a presionar Ctrl+V) que p
 - JavaScript
 
 ## :sparkles: Acceso
-Puedes acceder a la Deploy de este proyecto <a href="https://gustav0-ri0s.github.io/Challenge-Encriptador/">aquí</a>
+Puedes acceder a la Deploy de este proyecto <a target="_blank" href="https://gustav0-ri0s.github.io/Challenge-Encriptador/">aquí</a>
 
 ## :man_student: Autor
 Desarrollado por Gustavo Rios Quevedo
