@@ -158,8 +158,13 @@ textarea:disabled {
 
 
 button:hover{
-  filter: brightness(1.2);
-  transition: 0.3s ease-in-out;
+  filter: brightness(60%);
+  transition: 0.2s ease-in-out;
+}
+
+.btn-gray:hover, .btn-copy:hover{
+  filter: none;
+  background-color: #eeeeee;
 }
 
 button:active{
