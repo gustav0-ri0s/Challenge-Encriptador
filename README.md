@@ -32,5 +32,5 @@ Desarrollado por Isabel Gomez Luque
 ## :gift_heart: Agradecimientos
 Este proyecto se hizo posible gracias a Oracle y Alura Latam a través del Programa ONE, el cual me ayudó a adquirir nuevos conocimientos de desarrollo web y a entender sobre lógica de programación. Muchas gracias también a los profesores de Alura Latam por hacer más sencillo la forma de aprender programación.
 
-## :gift_heart: INSIGNIA DE FINALIZACIÓN
+## :trophy: INSIGNIA DE FINALIZACIÓN
 ![Image text](https://github.com/zzuljs/CppLearning/blob/master/CppLearning/raw/master/Itachi.jpg)
