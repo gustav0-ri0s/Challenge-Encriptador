@@ -179,6 +179,7 @@ footer{
 
 footer a {
   font-weight: 700;
+  text-decoration: none;  
 }
 
 @media (width < 770px) {
