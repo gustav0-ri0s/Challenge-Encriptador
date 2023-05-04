@@ -157,14 +157,14 @@ textarea:disabled {
 
 
 
-button:hover{
-  filter: brightness(60%);
+.btn-blue:hover{
+  background-color: #062041;
   transition: 0.2s ease-in-out;
 }
 
 .btn-gray:hover, .btn-copy:hover{
   filter: none;
-  background-color: #eeeeee;
+  background-color: #cccccc;
 }
 
 button:active{
