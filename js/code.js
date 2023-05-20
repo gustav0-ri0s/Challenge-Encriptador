@@ -26,7 +26,23 @@ textarea.addEventListener("keyup", function(event) {
   }
 });
 
-
+function sweetmsg(msg){
+  const Toast = Swal.mixin({
+    toast: true,
+    position: 'top',
+    showConfirmButton: false,
+    timer: 2000,
+    didOpen: (toast) => {
+      toast.addEventListener('mouseenter', Swal.stopTimer)
+      toast.addEventListener('mouseleave', Swal.resumeTimer)
+    }
+  })
+  
+  Toast.fire({
+    icon: 'success',
+    title: msg
+  })
+}
 
 function escogerdiv(textareaValue){
     
@@ -56,7 +72,10 @@ function encriptador(){
     salida = ingreso.replace(/a|e|i|o|u/g, function(matched){
     return mapObj[matched];
     });
+    
+    sweetmsg('Texto encriptado!');
     document.getElementById("salida").value = salida;
+    
     
     //document.getElementById("ingreso").value = "";
 }
@@ -79,6 +98,7 @@ function desencriptador(){
     salida = ingreso.replace(/ai|enter|imes|ober|ufat/g, function(matched){
     return mapObj[matched];
     });
+    sweetmsg('Texto desencriptado!');
     document.getElementById("salida").value = salida;
     
 }
@@ -90,6 +110,13 @@ botonCopiar.addEventListener('click', () => {
     navigator.clipboard.writeText(textareaValue) // Copia el valor al portapapeles
       .then(() => {
         console.log('Texto copiado al portapapeles: ' + textareaValue);
+        Swal.fire({
+          title: 'Copiado!',
+          text: 'Copiado en el portapapelenes!',
+          showConfirmButton: false,
+          timer: 1000,
+          icon:'success'
+        })
       })
       .catch((error) => {
         console.error('Error al copiar al portapapeles: ', error);
