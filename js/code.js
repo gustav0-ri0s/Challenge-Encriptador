@@ -20,9 +20,13 @@ textarea.addEventListener("keyup", function(event) {
   if (inputValue.match(uppercaseRegex) || inputValue.match(accentRegex)) {
     texto.classList.add("salto");
     textarea.style.backgroundColor = "#ffcccc";
+    botonEncriptador.disabled = true;
+    botonDesencriptador.disabled = true;
   } else {
     texto.classList.remove("salto");
     textarea.style.backgroundColor = "";
+    botonEncriptador.disabled = false;
+    botonDesencriptador.disabled = false;
   }
 });
 

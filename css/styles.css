@@ -167,7 +167,13 @@ textarea:disabled {
   background-color: #cccccc;
 }
 
-button:active{
+.btn-blue:disabled, .btn-gray:disabled{
+  background-color: #d8d7d7;
+  color: #999999;
+  outline: none;
+}
+
+button:active:not(:disabled){
   opacity: 0.5;
   font-size: 17px;
 }
